@@ -107,7 +107,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const data = await fetch(
-    `${process.env.STRAPI_URL}/articles?id=${params.slug}`
+    `${process.env.STRAPI_URL}//auticare-blogs?id=${params.slug}`
   );
   const blogData = await data.json();
 
