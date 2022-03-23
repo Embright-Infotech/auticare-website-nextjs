@@ -92,7 +92,7 @@ export default function Blog({ blogData }) {
 }
 
 export async function getStaticPaths() {
-  const res = await fetch(`${process.env.STRAPI_URL}/articles`);
+  const res = await fetch(`${process.env.STRAPI_URL}/auticare-blogs`);
   const blogList = await res.json();
 
   return {
