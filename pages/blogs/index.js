@@ -160,7 +160,7 @@ export default function Blogs({ blogList }) {
 }
 
 export const getStaticProps = async () => {
-  const data = await fetch(`${process.env.STRAPI_URL}/articles`);
+  const data = await fetch(`${process.env.STRAPI_URL}/auticare-blogs`);
   const blogList = await data.json();
 
   return {
